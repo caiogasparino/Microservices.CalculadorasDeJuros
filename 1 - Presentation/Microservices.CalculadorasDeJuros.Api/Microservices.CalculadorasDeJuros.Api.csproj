@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CalculadoraDeJuros.Contratos" Version="1.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.0-preview2.19525.4" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.0-preview2.19525.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Polly" Version="7.1.1" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.0.0-rc4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0-rc4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="5.0.0-rc4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2 - Services\Microservices.CalculadorasDeJuros.Services\Microservices.CalculadorasDeJuros.Services.csproj" />
+    <ProjectReference Include="..\..\3 - Domain\Microservices.CalculadorasDeJuros.Domain\Microservices.CalculadorasDeJuros.Domain.csproj" />
+    <ProjectReference Include="..\..\4 - CrossCutting\Microservices.CalculadorasDeJuros.CrossCutting\Microservices.CalculadorasDeJuros.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>
