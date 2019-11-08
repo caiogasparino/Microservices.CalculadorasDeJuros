@@ -4,5 +4,6 @@
     {
         public const string MsCalculadoraDeJurosGitHubRepository = "https://github.com/caiogvcoliveira/Microservices.CalculadorasDeJuros";
         public const string MsDeTaxasDeJurosGitHubRepository = "https://github.com/caiogvcoliveira/Microservices.TaxaDeJuros";
+
     }
 }
